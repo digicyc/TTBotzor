@@ -1,0 +1,23 @@
+// Our Settings File.
+var settings = {};
+
+// TurnTable Access
+settings.tt = {};
+settings.tt.adminid = '';
+settings.tt.name = 'TTBotz0r';
+settings.tt.auth = '';
+settings.tt.userid = '';
+
+// TurnTable Room ID's
+settings.tt.rooms = {};
+settings.tt.rooms.default = '';
+
+// RESTful settings
+settings.rest = {};
+settings.rest.host = '127.0.0.1';
+settings.rest.port = 8080;
+settings.rest.secret = '';
+
+
+// Make it a module
+module.exports = settings;
