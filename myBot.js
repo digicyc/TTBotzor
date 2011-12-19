@@ -16,11 +16,12 @@ var bot       = new Bot(AUTH, USERID, ROOMID);
 var adminhost = settings.rest.host;
 var adminport = settings.rest.port;
 
-bot.listen(adminport, adminhost);
+// AutoSkip flag
+var autoskip = false;
 
+bot.listen(adminport, adminhost);
 bot.speak("LETS GET THIS PARTAH STARTED BEEETCHES!!!");
 bot.vote('up'); // Bob that bot!
-
 console.log("HTTP SERVER Listening on: http://" + adminhost + ":" + adminport);
 
 
@@ -77,6 +78,15 @@ function jsonResponse(res, jsonMsg) {
   res.end(jsonMsg);
 }
 
+/**
+ * Check if the specified userid is the set admin id.
+ */
+function isAdmin(userid) {
+  if (userid == settings.tt.adminid) {
+    return true;
+  }
+  return false;
+}
 
 /**
  * On startup
@@ -110,8 +120,12 @@ bot.on('remDj', function (data) {
  */
 bot.on('newsong', function (data) { 
   bot.vote('up');
-});
 
+  // If autoskip set then autoskip our song.
+  if (autoskip) {
+    bot.stopSong();
+  }
+});
 
 /**
  * These are / Commands to our bot.
@@ -127,8 +141,25 @@ bot.on('speak', function (data) {
       bot.addDj();
    }
   else if (text.match(/^\/sgir skip$/)) {
-    if (data.userid == '') {
+    if (data.userid == settings.tt.adminid) {
       bot.stopSong();
+    }
+  }
+  else if (text.match(/^\/sgir autoskip$/)) {
+    if (autoskip) {
+      bot.speak('Autoskip is currently ON.');
+    } else {
+      bot.speak('Autoskip is turned off. I get to DJ!');
+    }
+  }
+  else if (text.match(/^\/sgir autoskip on$/)) {
+    if (isAdmin(data.userid)) {
+      autoskip = true;
+    }
+  }
+  else if (text.match(/^\/sgir autoskip off$/)) {
+    if (isAdmin(data.userid)) {
+      autoskip = false;
     }
   }
   // When people talk in the Bot's channel.
