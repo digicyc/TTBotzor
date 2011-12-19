@@ -7,11 +7,13 @@ Setup/Install
 ==============
 
 - ``nodejs``: You'll have to first install nodejs at http://nodejs.org. ::
- ``sudo apt-get install nodejs``      //For Deb based Distros.
+ ``sudo apt-get install nodejs`` 
 
 - ``npm``: After which you'll also install npm which is nodejs' package manager. ::
-``sudo apt-get install npm``          //For Deb based Distros.
+``sudo apt-get install npm`` 
 
+:: Test
+:: Another Test.
 
 Config
 ======
