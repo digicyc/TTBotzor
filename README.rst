@@ -6,13 +6,13 @@ TurnTable Botz0r
 Setup/Install
 ==============
 
-- ``nodejs``: You'll have to first install nodejs at http://nodejs.org
+- You'll have to first install nodejs at http://nodejs.org
     sudo apt-get install nodejs
 
-- ``npm``: After which you'll also install npm which is nodejs' package manager
+- After which you'll also install npm which is nodejs' package manager
     sudo apt-get install npm 
 
-- ``ttapi``: Grab the ttpi via npm
+- Grab the ttpi via npm
     npm install ttapi
 
 Config
