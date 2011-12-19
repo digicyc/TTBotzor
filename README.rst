@@ -12,8 +12,6 @@ Setup/Install
 - ``npm``: After which you'll also install npm which is nodejs' package manager. ::
 ``sudo apt-get install npm`` 
 
-:: Test
-:: Another Test.
 
 Config
 ======
