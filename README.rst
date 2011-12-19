@@ -9,13 +9,17 @@ Setup/Install
 - ``nodejs``: You'll have to first install nodejs at http://nodejs.org. ``sudo apt-get install nodejs`` For Deb based Distros.
 - ``npm``: After which you'll also install npm which is nodejs' package manager. ``sudo apt-get install npm`` For Deb based Distros.
 
+
 Config
 ======
 
-Configuration of the bot exists in settings.js.local.
+Configuration of the bot exists in settings.js.local
+----------------------------------------------------
+
 
 - Change filename to settings.js
 - Update all Values in settings.js
+
 
 Obtain your AUTHID, ROOMID(s), USERID with this Bookmarklet_
 
@@ -24,10 +28,12 @@ Just drag it up into your Bookmark bar and click when you're in your favorite TT
 Commands
 ========
 Some basic commands included so far.
+------------------------------------
 
 - ``/sgir autoskip`` : Checks status of Autoskip
 - ``/sgir autoskip on`` : Turns AutoSkip of it's songs on.
 - ``/sgir autoskip off`` :- Turns AutoSkipping off and allows your bot to DJ if they have tunez.
+
 
 License
 =======
