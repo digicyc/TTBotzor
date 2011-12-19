@@ -6,8 +6,11 @@ TurnTable Botz0r
 Setup/Install
 ==============
 
-- ``nodejs``: You'll have to first install nodejs at http://nodejs.org. ``sudo apt-get install nodejs`` For Deb based Distros.
-- ``npm``: After which you'll also install npm which is nodejs' package manager. ``sudo apt-get install npm`` For Deb based Distros.
+- ``nodejs``: You'll have to first install nodejs at http://nodejs.org. ::
+ ``sudo apt-get install nodejs``      //For Deb based Distros.
+
+- ``npm``: After which you'll also install npm which is nodejs' package manager. ::
+``sudo apt-get install npm``          //For Deb based Distros.
 
 
 Config
@@ -32,7 +35,7 @@ Some basic commands included so far.
 
 - ``/sgir autoskip`` : Checks status of Autoskip
 - ``/sgir autoskip on`` : Turns AutoSkip of it's songs on.
-- ``/sgir autoskip off`` :- Turns AutoSkipping off and allows your bot to DJ if they have tunez.
+- ``/sgir autoskip off`` : Turns AutoSkipping off and allows your bot to DJ if they have tunez.
 
 
 License
