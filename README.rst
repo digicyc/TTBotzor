@@ -18,7 +18,7 @@ Configuration of the bot exists in settings.js.local.
 
 Obtain your AUTHID, ROOMID(s), USERID with this Bookmarklet_
 
-Just drag it up into your Bookmark bar and click when your favorite TT room.
+Just drag it up into your Bookmark bar and click when you're in your favorite TT room.
 
 .. |sgir| image:: https://github.com/digicyc/TTBotzor/raw/master/sgir.png
 .. _Bookmarklet: http://alaingilbert.github.com/Turntable-API/bookmarklet.html
