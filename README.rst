@@ -20,5 +20,12 @@ Obtain your AUTHID, ROOMID(s), USERID with this Bookmarklet_
 
 Just drag it up into your Bookmark bar and click when you're in your favorite TT room.
 
+=======
+License
+=======
+Copyright (c) 2011 Aaron Allred
+
+Published under The MIT License, see LICENSE
+
 .. |sgir| image:: https://github.com/digicyc/TTBotzor/raw/master/sgir.png
 .. _Bookmarklet: http://alaingilbert.github.com/Turntable-API/bookmarklet.html
