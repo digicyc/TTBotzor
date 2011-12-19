@@ -23,9 +23,9 @@ Just drag it up into your Bookmark bar and click when you're in your favorite TT
 Commands
 ========
 Some basic commands included so far:
-``/sgir autoskip`` - Checks status of Autoskip
-``/sgir autoskip on`` - Turns AutoSkip of it's songs on.
-``/sgir autoskip off`` - Turns AutoSkipping off and allows your bot to DJ if they have tunez.
+- ``/sgir autoskip`` - Checks status of Autoskip
+- ``/sgir autoskip on`` - Turns AutoSkip of it's songs on.
+- ``/sgir autoskip off`` - Turns AutoSkipping off and allows your bot to DJ if they have tunez.
 
 License
 =======
