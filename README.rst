@@ -20,7 +20,6 @@ Obtain your AUTHID, ROOMID(s), USERID with this Bookmarklet_
 
 Just drag it up into your Bookmark bar and click when you're in your favorite TT room.
 
-=======
 License
 =======
 Copyright (c) 2011 Aaron Allred
