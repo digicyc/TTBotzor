@@ -16,7 +16,7 @@ Configuration of the bot exists in settings.js.local.
 - Change filename to settings.js
 - Update all Values in settings.js
 
-Obtain your AUTHID, ROOMID(s), USERID with this _Bookmarklet 
+Obtain your AUTHID, ROOMID(s), USERID with this Bookmarklet_
 
 Just drag it up into your Bookmark bar and click when your favorite TT room.
 
