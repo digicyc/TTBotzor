@@ -3,6 +3,12 @@ TurnTable Botz0r
 ####################
 |sgir|
 
+About
+=====
+A fun little Turntable.fm bot to help maintain a channel and a simple nodejs project
+to learn NodeJS which I'm still a complete NodeJS newb. Use with caution as turntable doesn't just want
+autobob bots for point hording I'm sure.
+
 Setup/Install
 ==============
 
@@ -38,6 +44,7 @@ Some basic commands included so far.
 - ``/sgir autoskip`` : Checks status of Autoskip
 - ``/sgir autoskip on`` : Turns AutoSkip of it's songs on.
 - ``/sgir autoskip off`` : Turns AutoSkipping off and allows your bot to DJ if they have tunez.
+- ``/sgir skip`` : Will skip the bots currently playing song. If autoskip is turned off of course.
 
 
 License
