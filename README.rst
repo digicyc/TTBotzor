@@ -12,14 +12,14 @@ autobob bots for point hording I'm sure.
 Setup/Install
 ==============
 
-- You'll have to first install nodejs at http://nodejs.org
-    sudo apt-get install nodejs
+You'll have to first install nodejs at http://nodejs.org
+  sudo apt-get install nodejs
 
-- After which you'll also install npm which is nodejs' package manager
-    sudo apt-get install npm 
+After which you'll also install npm which is nodejs' package manager
+  sudo apt-get install npm 
 
-- Grab the ttpi via npm
-    npm install ttapi
+Grab the ttpi via npm
+  npm install ttapi
 
 Config
 ======
