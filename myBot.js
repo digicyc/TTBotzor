@@ -20,6 +20,7 @@ var adminport = settings.rest.port;
 // AutoSkip flag
 var autoskip = false;
 
+// Init
 bot.listen(adminport, adminhost);
 bot.speak("LETS GET THIS PARTAH STARTED BEEETCHES!!!");
 bot.vote('up'); // Bob that bot!
@@ -130,11 +131,10 @@ bot.on('newsong', function (data) {
  * These are / Commands to our bot.
  */
 bot.on('speak', function (data) {
-   // Get the data
    var name = data.name;
    var text = data.text;
 
-   // Respond to "/hello" command
+   // Respond to "/hello" commands
    if (text.match(/^\/hello sgir$/)) {
       bot.speak('Heyas! How are ya '+name+' ^_^');
       bot.addDj();
@@ -164,7 +164,6 @@ bot.on('speak', function (data) {
   // When people talk in the Bot's channel.
   console.log(name + " SAYS: ", text);
 });
-
 
 /**
  * If someone dj's we do too
