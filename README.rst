@@ -9,10 +9,9 @@ A fun little Turntable.fm bot to help maintain a channel and a simple nodejs pro
 to learn NodeJS which I'm still a complete NodeJS newb. Use with caution as turntable doesn't just want
 autobob bots for point hording I'm sure.
 
-Setup/Install
-==============
-
-You'll have to first install nodejs at http://nodejs.org
+Setup and Install
+=================
+You'll have to first install nodejs_
   sudo apt-get install nodejs
 
 After which you'll also install npm which is nodejs' package manager
@@ -56,3 +55,4 @@ Published under The MIT License, see LICENSE_
 .. |sgir| image:: https://github.com/digicyc/TTBotzor/raw/master/sgir.png
 .. _Bookmarklet: http://alaingilbert.github.com/Turntable-API/bookmarklet.html
 .. _LICENSE: https://github.com/digicyc/TTBotzor/blob/master/LICENSE.rst
+.. _nodejs: http://nodejs.org
