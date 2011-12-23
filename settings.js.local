@@ -1,6 +1,9 @@
 // Our Settings File.
 var settings = {};
 
+// Pertain to the actual bot.
+settings.version = "0.9.1";
+
 // TurnTable Access
 settings.tt = {};
 settings.tt.adminid = '';

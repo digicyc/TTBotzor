@@ -6,6 +6,7 @@
 
 var settings = require('./settings'); // Our Setings file.
 var Bot = require('ttapi'); // Call the TurnTable Library
+var botVersion = settings.version;
 
 var AUTH   = settings.tt.auth;
 var USERID = settings.tt.userid;
@@ -39,13 +40,7 @@ bot.on('httpRequest', function (req, res) {
 
   switch (url) {
     case '/'+secrets+'/version/':
-      if (method == 'GET') {
-        res.writeHead(200, { 'Content-Type': 'application/json' });
-        res.end('{"version":"1.0"}');
-      } else {
-        res.writeHead(500);
-        res.end();
-      }
+      jsonResponse('{"version":' + botVersion +'}');
       break;
     case '/'+secrets+'/bob/':
       bot.vote('up');
@@ -74,8 +69,13 @@ bot.on('httpRequest', function (req, res) {
  *  200 Response with json value as return.
  */
 function jsonResponse(res, jsonMsg) {
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.end(jsonMsg);
+  if (req.method == 'GET') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(jsonMsg);
+  } else {
+    res.writeHead(500);
+    res.end();
+  }
 }
 
 /**
@@ -93,7 +93,6 @@ function isAdmin(userid) {
  */
 bot.on('ready', function (data) {
   console.log("Connected to TurnTable!");
-  //bot.roomRegister(ROOMID);
   bot.vote('up');
 });
 
